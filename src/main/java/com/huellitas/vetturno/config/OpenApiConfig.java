@@ -16,9 +16,9 @@ public class OpenApiConfig {
         final String securitySchemeName = "BearerAuth";
         return new OpenAPI()
                 .info(new Info()
-                        .title("VetTurno API")
+                        .title("VetTurno")
                         .version("1.0")
-                        .description("Agenda digital de Veterinaria Huellitas"))
+                        .description("Agenda digital para la gestión de citas de Veterinaria Huellitas"))
                 .addSecurityItem(new SecurityRequirement().addList(securitySchemeName))
                 .components(new Components()
                         .addSecuritySchemes(securitySchemeName,
