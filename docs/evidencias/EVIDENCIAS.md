@@ -32,7 +32,7 @@ Commits de cada parte:
 | 4     | feat: agendar citas sin cruces de horario                       | [https://github.com/joshcastro06/VetTurno/commit/Parte 4](https://github.com/joshcastro06/VetTurno/commit/5a1b1d1e8cdb7a9776d2188100af82156a52731c) |
 | 5     | feat: agregar autenticación JWT y roles                         | [https://github.com/joshcastro06/VetTurno/commit/Parte 5](https://github.com/joshcastro06/VetTurno/commit/68f7a62e3586fb040366ca0799f6e88d0ca6ca2b) |
 | 6     | feat: validaciones y manejo global de errores                   | [https://github.com/joshcastro06/VetTurno/commit/Parte 6](https://github.com/joshcastro06/VetTurno/commit/536e35055a35594159d944237f48f93fa6d5250e) |
-| 7     | docs: Swagger, matriz de pruebas y README final                 | [https://github.com/TU_USUARIO/vetturno/commit/HASH_PARTE_7](https://github.com/TU_USUARIO/vetturno/commit/HASH_PARTE_7)                            |
+| 7     | docs: Swagger, matriz de pruebas y README final                 | [https://github.com/joshcastro06/VetTurno/commit/Parte 7](https://github.com/joshcastro06/VetTurno/commit/90ac308c95fcb1f47d1a7416c5549e6f98d6fc92)                            |
 
 ## Parte 1 — Preparar el proyecto
 
