@@ -3,6 +3,7 @@ package com.huellitas.vetturno.controller;
 import com.huellitas.vetturno.dto.CitaDTO;
 import com.huellitas.vetturno.dto.CitaRequest;
 import com.huellitas.vetturno.service.CitaService;
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,7 +26,7 @@ public class CitaController {
     }
 
     @PostMapping
-    public ResponseEntity<CitaDTO> crear(@RequestBody CitaRequest request) {
+    public ResponseEntity<CitaDTO> crear(@Valid @RequestBody CitaRequest request) {
         CitaDTO creada = citaService.crear(request);
         return ResponseEntity.status(HttpStatus.CREATED).body(creada);
     }

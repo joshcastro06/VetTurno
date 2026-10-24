@@ -1,9 +1,17 @@
 package com.huellitas.vetturno.dto;
 
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+
 public class PropietarioRequest {
 
+    @NotBlank(message = "El nombre es obligatorio")
     private String nombre;
+
+    @NotBlank(message = "El telefono es obligatorio")
     private String telefono;
+
+    @Email(message = "El formato de correo no es valido")
     private String email;
 
     public PropietarioRequest() {

@@ -3,6 +3,7 @@ package com.huellitas.vetturno.controller;
 import com.huellitas.vetturno.dto.PropietarioDTO;
 import com.huellitas.vetturno.dto.PropietarioRequest;
 import com.huellitas.vetturno.service.PropietarioService;
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,7 +25,7 @@ public class PropietarioController {
     }
 
     @PostMapping
-    public ResponseEntity<PropietarioDTO> crear(@RequestBody PropietarioRequest request) {
+    public ResponseEntity<PropietarioDTO> crear(@Valid @RequestBody PropietarioRequest request) {
         PropietarioDTO creado = propietarioService.crear(request);
         return ResponseEntity.status(HttpStatus.CREATED).body(creado);
     }

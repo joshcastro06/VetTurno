@@ -3,6 +3,7 @@ package com.huellitas.vetturno.controller;
 import com.huellitas.vetturno.dto.VeterinarioDTO;
 import com.huellitas.vetturno.dto.VeterinarioRequest;
 import com.huellitas.vetturno.service.VeterinarioService;
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,7 +25,7 @@ public class VeterinarioController {
     }
 
     @PostMapping
-    public ResponseEntity<VeterinarioDTO> crear(@RequestBody VeterinarioRequest request) {
+    public ResponseEntity<VeterinarioDTO> crear(@Valid @RequestBody VeterinarioRequest request) {
         VeterinarioDTO creado = veterinarioService.crear(request);
         return ResponseEntity.status(HttpStatus.CREATED).body(creado);
     }

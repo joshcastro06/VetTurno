@@ -1,8 +1,13 @@
 package com.huellitas.vetturno.dto;
 
+import jakarta.validation.constraints.NotBlank;
+
 public class LoginRequest {
 
+    @NotBlank(message = "El email es obligatorio")
     private String email;
+
+    @NotBlank(message = "La contrasena es obligatoria")
     private String password;
 
     public LoginRequest() {
