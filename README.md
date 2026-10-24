@@ -173,7 +173,7 @@ export JWT_SECRET="ClaveSecretaDeAlMenos32CaracteresLongitud!!"
 ## 10. Matriz de Pruebas
 
 Para revisar el detalle de los 15 escenarios de prueba funcionales, de seguridad y de persistencia, consulta la matriz completa en:
-* [Plan y Matriz de Pruebas (docs/pruebas.md)](docs/pruebas.md)
+* [Plan y Matriz de Pruebas (docs/pruebas.md)](docs/matriz/matriz.md)
 
 ---
 
@@ -204,9 +204,5 @@ El archivo que contiene las evidencias de cada una de las 7 partes se encuentra 
 
 ---
 
-## 13. Matriz de pruebas manuales
-
-La matriz de pruebas manuales se encuentra en:
-* [Archivo de matriz](docs/matriz/matriz.md)
 
 
